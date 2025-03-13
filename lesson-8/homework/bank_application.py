@@ -16,7 +16,7 @@ class Account:
     def from_dict(cls, data):
         return cls(data["account_number"], data["name"], data["balance"])
     
-class Bank(Account):
+class Bank():
     global file
     file = 'accounts.txt'
     def __init__(self):
