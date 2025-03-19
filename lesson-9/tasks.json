@@ -1,0 +1,20 @@
+[
+  {
+    "ID": 1,
+    "Task Name": "Do laundry",
+    "Completed Status": false,
+    "Priority": 3
+  },
+  {
+    "ID": 2,
+    "Task Name": "Buy groceries",
+    "Completed Status": true,
+    "Priority": 2
+  },
+  {
+    "ID": 3,
+    "Task Name": "Finish homework",
+    "Completed Status": false,
+    "Priority": 1
+  }
+]
