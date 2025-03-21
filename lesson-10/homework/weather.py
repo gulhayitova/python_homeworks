@@ -3,7 +3,8 @@ import json
 
 lat = 41.2646 # for Tashkent
 lon = 69.2163
-API_key = 'f082e45d66926670cfb8349a251e2ba5' # personal API key
+with open('my_api_key.txt', 'r') as file: 
+    API_key = file.read()
 
 def wdata_for_city(lat, lon, api):
     url = f'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={api}'
