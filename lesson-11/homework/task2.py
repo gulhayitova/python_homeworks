@@ -23,5 +23,5 @@ with sqlite3.connect('library.db') as connection:
     cursor.executemany("UPDATE Books SET Rating=? WHERE Title=?", ratings) 
     #cursor.execute("SELECT Title, Author FROM Books WHERE Genre='Dystopian'") #4) retrieve title and author of books with genre dystopian
     cursor.execute("SELECT * FROM Books ORDER BY Year_Published ASC") #7) retrieve sorting by year in ascending order
-for one in cursor:
-    print(one)
+for each_row in cursor:
+    print(each_row)
