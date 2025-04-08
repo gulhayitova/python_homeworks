@@ -41,7 +41,7 @@ if response.status_code == 200:
             ''', (title, company, location, job_link))
 
 
-    print("Jobs stored in the memory successfully!")
+    print("Jobs stored successfully!")
 
 
 #function to filter jobs by company or location
@@ -53,7 +53,6 @@ def filter_jobs(filter_by, value):
     cursor.execute(query, (value,))
     rows = cursor.fetchall()
     conn.close()
-    
     return rows
 
 #function to export filtered jobs to CSV
