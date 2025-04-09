@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-#[200, 150, 250, 175, 225]
 
 A_product = np.array([50, 60, 45, 45])
 B_product = np.array([30, 40, 45, 35])
